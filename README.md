@@ -24,7 +24,7 @@ Each project is standalone and runs directly in the browser without any addition
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/CodeTraversal/JavaScript-Projects.git
+   git clone https://github.com/CodeTraversal/JavaScript-All-Projects.git
    ```
 
 2.Open any project folder
