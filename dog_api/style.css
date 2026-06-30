@@ -1,0 +1,87 @@
+/* reset code start here  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+h1:hover {
+  color: indianred;
+  transform: scale(1.1);
+}
+
+.imgDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.imgDiv img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dogImage {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.imgDiv:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.btn {
+  background-color: aqua;
+  color: #2c2c2c;
+  padding: 10px;
+  margin: 5px auto;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+  margin-top: 3rem;
+  margin-left: 30rem;
+}
+
+.btn:hover {
+  background-color: cadetblue;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+
+footer:hover {
+  color: blueviolet;
+  transform: scale(1.1);
+}

@@ -1,0 +1,111 @@
+/* reset code start here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* reset code end here */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("./image/wave-haikei.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  width: 400px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    2px 2px 5px #89c9f3,
+    -2px -2px 5px #89c9f3;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  padding: 20px 40px;
+}
+
+.box h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.box h1:hover {
+  color: aqua;
+}
+
+form p {
+  margin-top: 20px;
+}
+
+.login-body p i {
+  position: absolute;
+  top: 34px;
+  right: 16px;
+  color: #008000;
+  font-size: 22px;
+}
+
+.login-body p span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #90ee90;
+}
+
+form p label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+form p input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #000;
+}
+
+form p input[type="submit"] {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background: #3498db;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form p input[type="submit"]:hover {
+  background: #2773a5;
+  transition: 0.5s;
+}
+
+.box > p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box > p a {
+  text-decoration: none;
+}
+
+.box > p a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
