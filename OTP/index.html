@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Validate OTP</title>
+    <link
+      rel="shortcut icon"
+      href="./image/password-protection.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <button
+      id="themeToggle"
+      class="theme-toggle"
+    >
+      🌙 Dark Mode
+    </button>
+
+    <div
+      id="otp-container-id"
+      class="otp-container-class"
+    >
+      <h1>Enter OTP</h1>
+
+      <div
+        class="otp-list-class"
+        id="otp-list-id"
+      >
+        <input
+          type="text"
+          class="otp-box"
+          name="otp-box"
+          id="otp-box"
+          placeholder="Write OTP"
+          maxlength="4"
+        />
+      </div>
+
+      <p
+        id="generated-otp-id"
+        class="generated-otp-class"
+      >
+        ...
+      </p>
+
+      <p
+        id="result-id"
+        class="otp-validate-message"
+      ></p>
+      <p id="otp-expires-id"></p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

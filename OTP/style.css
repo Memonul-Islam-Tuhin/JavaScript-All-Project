@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: italic;
+}
+
+:root {
+  --bg: #1e1e1e;
+  --text: #f0f0f0;
+  --card: rgba(255, 255, 255, 0.95);
+  --bench: #333;
+  --button: #00b894;
+  --button-hover: #019875;
+  --footer: #121212;
+  --highlight: #00b894;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+.light-theme {
+  --bg: #f5f5f5;
+  --text: #121212;
+  --card: #ffffff;
+  --bench: #e0e0e0;
+  --button: #2980b9;
+  --button-hover: #1c5d99;
+  --footer: #eaeaea;
+  --highlight: #2980b9;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--button);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+.theme-toggle:hover {
+  background-color: var(--button-hover);
+}
+
+.otp-container-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.otp-container-class h1 {
+  color: blueviolet;
+  transition: all 0.5s ease;
+}
+
+.otp-container-class h1:hover {
+  transform: scale(1.2);
+}
+
+.otp-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.otp-list-class .otp-box {
+  width: 100%;
+  border: none;
+  margin-right: 5px;
+  text-align: center;
+  height: 100%;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 1px 1px var(--highlight);
+  border-radius: 5px;
+}
+.otp-validate-message {
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/* .otp-expires-id {
+  margin-top: 20px;
+} */
+
+.generated-otp-class {
+  margin-top: 20px;
+}
+
+.otp-validate-message {
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 2px;
+  margin-bottom: 30px;
+}
+
+.otp-validate-message.success {
+  border: 1px solid #58dd10;
+  font-size: 1.5rem;
+  color: green;
+}
+.otp-validate-message.fail {
+  border: 1px solid #e00d0d;
+  font-size: 1.5rem;
+  color: red;
+}

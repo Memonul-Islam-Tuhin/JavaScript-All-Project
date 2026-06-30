@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
